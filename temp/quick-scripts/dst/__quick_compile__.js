@@ -1,6 +1,6 @@
 
 (function () {
-var scripts = [{"deps":{"./assets/Script/Joystick":3,"./assets/Script/BaseBall":1,"./assets/Script/Joystick/JoystickBg":4,"./assets/Script/Game":2},"path":"preview-scripts/__qc_index__.js"},{"deps":{},"path":"preview-scripts/assets/Script/BaseBall.js"},{"deps":{"./BaseBall":1},"path":"preview-scripts/assets/Script/Game.js"},{"deps":{},"path":"preview-scripts/assets/Script/Joystick.js"},{"deps":{},"path":"preview-scripts/assets/Script/Joystick/JoystickBg.js"}];
+var scripts = [{"deps":{"./assets/Script/BaseBall":1,"./assets/Script/Joystick/JoystickBg":3,"./assets/Script/Joystick/JoystickCenter":5,"./assets/Script/Joystick/Joystick":4,"./assets/Script/Game":2},"path":"preview-scripts/__qc_index__.js"},{"deps":{},"path":"preview-scripts/assets/Script/BaseBall.js"},{"deps":{},"path":"preview-scripts/assets/Script/Game.js"},{"deps":{"../BaseBall":1},"path":"preview-scripts/assets/Script/Joystick/JoystickBg.js"},{"deps":{"./JoystickBg":3,"./JoystickCenter":5},"path":"preview-scripts/assets/Script/Joystick/Joystick.js"},{"deps":{"../BaseBall":1},"path":"preview-scripts/assets/Script/Joystick/JoystickCenter.js"}];
 var entries = ["preview-scripts/__qc_index__.js"];
 var bundleScript = 'preview-scripts/__qc_bundle__.js';
 

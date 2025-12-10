@@ -5,24 +5,28 @@
 // Learn life-cycle callbacks:
 //  - https://docs.cocos.com/creator/2.4/manual/en/scripting/life-cycle-callbacks.html
 
+import BaseBall from "../BaseBall";
+
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class NewClass extends cc.Component {
+export default class JoystickBg extends BaseBall {
 
-    @property(cc.Label)
-    label: cc.Label = null;
-
-    @property
-    text: string = 'hello';
-
-    // LIFE-CYCLE CALLBACKS:
-
-    // onLoad () {}
-
-    start () {
-
+    private _lineWidth: number = 5;
+    
+    protected onLoad(): void {
+        this.color = cc.Color.WHITE;
+        this.radius = 100;
     }
 
+    graphicsRender(): void {
+        if (this.graphics) {
+            this.graphics.clear();
+            this.graphics.strokeColor = this.color;
+            this.graphics.circle(0, 0, this.radius);
+            this.graphics.lineWidth = this._lineWidth;
+            this.graphics.stroke();
+        }
+    }
     // update (dt) {}
 }

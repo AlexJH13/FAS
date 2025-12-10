@@ -17,16 +17,16 @@ export default class Game extends cc.Component {
     // onLoad () {}
 
     start () {
-        cc.resources.load('Prefabs/Ball', (err, prefab) => {
-            if (err) {
-                console.error(err);
-                return;
-            }
-            const baseBall = cc.instantiate(prefab);
-            baseBall.getComponent(BaseBall).color = cc.Color.RED;
-            baseBall.getComponent(BaseBall).radius = 50;
-            baseBall.parent = this.node;
-        });
+        // cc.resources.load('Prefabs/Ball', (err, prefab) => {
+        //     if (err) {
+        //         console.error(err);
+        //         return;
+        //     }
+        //     const baseBall = cc.instantiate(prefab);
+        //     baseBall.getComponent(BaseBall).color = cc.Color.RED;
+        //     baseBall.getComponent(BaseBall).radius = 50;
+        //     baseBall.parent = this.node;
+        // });
     }
 
     // update (dt) {}

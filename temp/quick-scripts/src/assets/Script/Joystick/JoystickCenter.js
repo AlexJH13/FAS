@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, '96b88k9NzdGF6FvBoBmJIdx', 'JoystickBg');
-// Script/Joystick/JoystickBg.ts
+cc._RF.push(module, 'a6b83D1+NtPK42Po2u+SR7P', 'JoystickCenter');
+// Script/Joystick/JoystickCenter.ts
 
 "use strict";
 // Learn TypeScript:
@@ -31,32 +31,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var BaseBall_1 = require("../BaseBall");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var JoystickBg = /** @class */ (function (_super) {
-    __extends(JoystickBg, _super);
-    function JoystickBg() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this._lineWidth = 5;
-        return _this;
-        // update (dt) {}
+var JoystickCenter = /** @class */ (function (_super) {
+    __extends(JoystickCenter, _super);
+    function JoystickCenter() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
-    JoystickBg.prototype.onLoad = function () {
+    JoystickCenter.prototype.onLoad = function () {
         this.color = cc.Color.WHITE;
-        this.radius = 100;
+        this.radius = 30;
     };
-    JoystickBg.prototype.graphicsRender = function () {
-        if (this.graphics) {
-            this.graphics.clear();
-            this.graphics.strokeColor = this.color;
-            this.graphics.circle(0, 0, this.radius);
-            this.graphics.lineWidth = this._lineWidth;
-            this.graphics.stroke();
-        }
-    };
-    JoystickBg = __decorate([
+    JoystickCenter = __decorate([
         ccclass
-    ], JoystickBg);
-    return JoystickBg;
+    ], JoystickCenter);
+    return JoystickCenter;
 }(BaseBall_1.default));
-exports.default = JoystickBg;
+exports.default = JoystickCenter;
 
 cc._RF.pop();

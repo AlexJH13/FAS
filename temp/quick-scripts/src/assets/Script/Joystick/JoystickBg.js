@@ -29,31 +29,34 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var BaseBall_1 = require("../BaseBall");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var NewClass = /** @class */ (function (_super) {
-    __extends(NewClass, _super);
-    function NewClass() {
+var JoystickBg = /** @class */ (function (_super) {
+    __extends(JoystickBg, _super);
+    function JoystickBg() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.label = null;
-        _this.text = 'hello';
+        _this._lineWidth = 5;
         return _this;
         // update (dt) {}
     }
-    // LIFE-CYCLE CALLBACKS:
-    // onLoad () {}
-    NewClass.prototype.start = function () {
+    JoystickBg.prototype.onLoad = function () {
+        this.color = cc.Color.WHITE;
+        this.radius = 100;
     };
-    __decorate([
-        property(cc.Label)
-    ], NewClass.prototype, "label", void 0);
-    __decorate([
-        property
-    ], NewClass.prototype, "text", void 0);
-    NewClass = __decorate([
+    JoystickBg.prototype.graphicsRender = function () {
+        if (this.graphics) {
+            this.graphics.clear();
+            this.graphics.strokeColor = this.color;
+            this.graphics.circle(0, 0, this.radius);
+            this.graphics.lineWidth = this._lineWidth;
+            this.graphics.stroke();
+        }
+    };
+    JoystickBg = __decorate([
         ccclass
-    ], NewClass);
-    return NewClass;
-}(cc.Component));
-exports.default = NewClass;
+    ], JoystickBg);
+    return JoystickBg;
+}(BaseBall_1.default));
+exports.default = JoystickBg;
 
 cc._RF.pop();

@@ -29,7 +29,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var BaseBall_1 = require("./BaseBall");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var Game = /** @class */ (function (_super) {
     __extends(Game, _super);
@@ -39,17 +38,16 @@ var Game = /** @class */ (function (_super) {
     // LIFE-CYCLE CALLBACKS:
     // onLoad () {}
     Game.prototype.start = function () {
-        var _this = this;
-        cc.resources.load('Prefabs/Ball', function (err, prefab) {
-            if (err) {
-                console.error(err);
-                return;
-            }
-            var baseBall = cc.instantiate(prefab);
-            baseBall.getComponent(BaseBall_1.default).color = cc.Color.RED;
-            baseBall.getComponent(BaseBall_1.default).radius = 50;
-            baseBall.parent = _this.node;
-        });
+        // cc.resources.load('Prefabs/Ball', (err, prefab) => {
+        //     if (err) {
+        //         console.error(err);
+        //         return;
+        //     }
+        //     const baseBall = cc.instantiate(prefab);
+        //     baseBall.getComponent(BaseBall).color = cc.Color.RED;
+        //     baseBall.getComponent(BaseBall).radius = 50;
+        //     baseBall.parent = this.node;
+        // });
     };
     Game = __decorate([
         ccclass

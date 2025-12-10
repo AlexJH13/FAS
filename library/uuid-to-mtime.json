@@ -510,8 +510,8 @@
     "relativePath": "Script"
   },
   "9224c479-5ed3-4a6d-af6b-fbc4ce09cbaf": {
-    "asset": 1765337217081,
-    "meta": 1765337217084,
+    "asset": 1765337985161,
+    "meta": 1765337985162,
     "relativePath": "Scene/GameScene.fire"
   },
   "26873081-6900-4e2d-9eb1-255301d16261": {
@@ -529,14 +529,9 @@
     "meta": 1765336449811,
     "relativePath": "resources"
   },
-  "7d359943-0156-4476-887b-e805633b8f54": {
-    "asset": 1765336580097,
-    "meta": 1765337151115,
-    "relativePath": "Script/Game.ts"
-  },
   "8876482b-5101-4cc7-8e38-59a7dc21c5d4": {
-    "asset": 1765337230812,
-    "meta": 1765337230816,
+    "asset": 1765348045929,
+    "meta": 1765348045931,
     "relativePath": "resources/Prefabs/Joystick.prefab"
   },
   "77a9439b-fe6b-4adc-8b8f-fe129d7c0a46": {
@@ -544,19 +539,29 @@
     "meta": 1765337354942,
     "relativePath": "Script/BaseBall.ts"
   },
-  "1131c64a-c1b6-47a6-8010-2c5e75e31c42": {
-    "asset": 1765337253898,
-    "meta": 1765337354947,
-    "relativePath": "Script/Joystick.ts"
-  },
   "c75816ea-e2f1-4a53-8a2b-f34fc3332eff": {
     "asset": 1765337367367,
     "meta": 1765337367368,
     "relativePath": "Script/Joystick"
   },
   "96b8893d-3737-4617-a16f-068066248771": {
-    "asset": 1765337377784,
-    "meta": 1765337400664,
+    "asset": 1765337916513,
+    "meta": 1765337923909,
     "relativePath": "Script/Joystick/JoystickBg.ts"
+  },
+  "7d359943-0156-4476-887b-e805633b8f54": {
+    "asset": 1765337999289,
+    "meta": 1765338001066,
+    "relativePath": "Script/Game.ts"
+  },
+  "a6b830f5-f8db-4f2b-8d8f-a36bbe491ecf": {
+    "asset": 1765338119711,
+    "meta": 1765338121314,
+    "relativePath": "Script/Joystick/JoystickCenter.ts"
+  },
+  "1131c64a-c1b6-47a6-8010-2c5e75e31c42": {
+    "asset": 1765349439508,
+    "meta": 1765349441122,
+    "relativePath": "Script/Joystick/Joystick.ts"
   }
 }

@@ -12,8 +12,9 @@
                         if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}
 require('./assets/Script/BaseBall');
 require('./assets/Script/Game');
-require('./assets/Script/Joystick');
+require('./assets/Script/Joystick/Joystick');
 require('./assets/Script/Joystick/JoystickBg');
+require('./assets/Script/Joystick/JoystickCenter');
 
                     }
                     if (nodeEnv) {
